@@ -1,2 +1,2 @@
 !
-helo i am from slider where are you from!
+hello i am from slider where are you from!

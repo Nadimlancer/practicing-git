@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/cart/css/syle.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <h1 class="text-center h3">Intereactive Bootstrap Shooping cart</h1>
+
+        <div class="row my-5">
+          <div class="col-md-4">
+            <img
+              width="250"
+              src="https://adminapi.applegadgetsbd.com/storage/media/large/MacBook-Air-M3-13-Inch-Space-Gray-5947.jpg"
+              alt="laptop image"
+              class="img-fluid mx-auto d-block"
+            />
+            <h5 class="text-center text-muted">Apple macbook 13</h5>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="d-flex justify-content-center align-items-center mt-5 pt-5"
+            >
+              <button
+                class="btn btn-danger"
+                onclick="handleProductChange('laptop',false)"
+              >
+                Remove
+              </button>
+              <input
+                type="number"
+                value="1"
+                class="form-control text-center text-muted"
+                id="laptop-count"
+              />
+              <button
+                class="btn btn-success"
+                onclick="handleProductChange('laptop', true)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p class="h5 mt-5 pt-5 text-center">
+              price-<span id="laptop-total">$1400</span>
+            </p>
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col-md-4">
+            <img
+              width="250"
+              src="https://adminapi.applegadgetsbd.com/storage/media/large/Green_aa-5413.jpg"
+              alt="headphone image"
+              class="img-fluid mx-auto d-block"
+            />
+            <h5 class="text-center text-muted">Apple airpod</h5>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="d-flex justify-content-center align-items-center mt-5 pt-5"
+            >
+              <button
+                class="btn btn-danger"
+                onclick="handleProductChange('headphone', false)"
+              >
+                Remove
+              </button>
+              <input
+                type="text"
+                class="form-control text-center text-muted"
+                value="1"
+                id="headphone-count"
+              />
+              <button
+                class="btn btn-success"
+                onclick="handleProductChange('headphone', true)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p class="h5 mt-5 pt-5 text-center">
+              price-<span id="headphone-total">$250</span>
+            </p>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-md-4">
+            <img
+              width="250"
+              src="https://www.imagineonline.store/cdn/shop/files/iPhone_15_Green_PDP_Image_Position-1__en-IN_a957365d-0aa2-43da-88b1-fcaa9b0be4cf.jpg?v=1694606789&width=823g"
+              alt="Phone image"
+              class="img-fluid mx-auto d-block"
+            />
+            <h5 class="text-center text-muted">Iphone 16</h5>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="d-flex justify-content-center align-items-center mt-5 pt-5"
+            >
+              <button
+                class="btn btn-danger"
+                onclick="handleProductChange('phone', false)"
+              >
+                Remove
+              </button>
+              <input
+                type="text"
+                class="form-control text-center text-muted"
+                id="phone-count"
+                value="1"
+              />
+              <button
+                class="btn btn-success"
+                onclick="handleProductChange('phone', true)"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p class="h5 mt-5 pt-5 text-center">
+              price-<span id="phone-total">$1000</span>
+            </p>
+          </div>
+          <div class="d-flex bg-white p-3">
+            <div class="col-md-6 col-sm-6">
+              <h2 class="h5">Sub-Total :</h2>
+              <h2 class="h5">Tax :</h2>
+              <h2 class="h5">Grand test:</h2>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <h2 class="h5">$ <span id="sub-total">0</span></h2>
+              <h2 class="h5">$ <span id="tax-amount">0</span></h2>
+              <h2 class="h5">$ <span id="grand-amount">0</span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascrpt/script.js"></script>
+  </body>
+</html>
